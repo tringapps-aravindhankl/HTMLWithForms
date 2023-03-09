@@ -18,7 +18,7 @@ function userName(){
         nameMessage.style.marginLeft="10%";
         return false;
     }
-    if(userText.match(/[0-9]/))
+    if(userText.match(/\d/))
     {
         nameMessage.style.border="solid black";
         nameMessage.style.borderRadius="5px";
