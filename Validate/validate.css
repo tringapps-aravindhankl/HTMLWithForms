@@ -1,0 +1,36 @@
+.box{
+      border: 2px solid #000000;
+      width: 300px;
+      height: auto;
+      text-align: center;
+      background-color: rgb(222, 233, 238);
+      border-radius: 10px;
+      align-items: center;
+      margin-top: 25%;    
+} 
+
+.whole-Input{
+    width:250px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-style: italic;
+
+}
+.whole-Label{
+    color: black;
+    font-style: italic;
+}
+body{
+    background-image: url('logo.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-Submit{
+     margin-top:5%;
+     color: black;     
+     background-color: white;
+}

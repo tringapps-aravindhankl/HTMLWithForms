@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Html</title>
+    <link rel="stylesheet" href="validate.css">
+</head>
+<body>
+    <form>
+    <div class="box">
+    <label class="whole-Label">Username</label>
+    <input type="text" placeholder="Your Name" id="user-Name" class="whole-Input" onkeyup="userName()">
+    <p id="nameMessage"></p>
+
+    <label class="whole-Label">Phone</label>
+    <input type="text" placeholder="Phone" id="user-Phone" onkeyup="userPhone()" class="whole-Input">
+    <p id="phoneMessage"></p>
+
+    <label class="whole-Label">Age</label><br>
+    <input type="text" placeholder="Your Age" id="user-Age" onkeyup="userAge()" class="whole-Input">
+    <p id="ageMessage"></p>
+
+    <label class="whole-Label">Date</label><br>
+   <input type="date" id="user-Date" onkeyup="userDate()" class="whole-Input">
+    <p id="dateMessage"></p>
+    
+    <input type="submit" onclick="return Submit()" id="user-Submit">
+    <p id="submitMessage"></p>
+    </div>
+</form>
+    <script src="validate.js"></script>
+</body>
+</html>
