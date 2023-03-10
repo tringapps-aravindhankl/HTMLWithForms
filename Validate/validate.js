@@ -6,7 +6,6 @@ let submitMessage=document.getElementById('submitMessage');
 
 
 function userName(){
-    console.log("1");
     let userText=document.getElementById("user-Name").value;
     if(userText=='')
     {   
@@ -35,7 +34,6 @@ function userName(){
 
 
 function userPhone(){
-    console.log("2");
     let phoneText=document.getElementById('user-Phone').value;
     if(phoneText=='')
     {
@@ -97,18 +95,14 @@ return true;
 
 function userDate(){
     let dateText=document.getElementById("user-Date").value;
-    if(dateText==''){
-        dateMessage.innerHTML='required';
-        dateMessage.style.border="solid black";
-        dateMessage.style.borderRadius="5px";
-        dateMessage.style.width="200px";
-        dateMessage.style.color="red"
-        dateMessage.style.marginLeft="10%";
-        return false;
+    let currentDate="2023-03-14";
+    if(dateText<=currentDate && dateText!=''){
+      dateMessage.innerHTML='';
+      return true;
     }
-     dateMessage.innerHTML='';
-     dateMessage.style.border="none";
-    return true;
+    dateMessage.innerHTML='Date is Not Valid:)';
+    dateMessage.style.color="red";
+    return false;
 }
      
 
